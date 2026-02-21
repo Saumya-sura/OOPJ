@@ -7,25 +7,20 @@
 class student{
     int rollNumber;
     String name;
-
     student(int rn, String n){
         rollNumber = rn;
         name = n;
     }
-
     void display(){
         System.out.println("Roll Number: " + rollNumber);
         System.out.println("Name: " + name);
     }
-
     int totalMarks(int marks1, int marks2){
         return marks1 + marks2;
     }
-
-    int totalMarks(int marks1, int marks2, int marks3){
+   int totalMarks(int marks1, int marks2, int marks3){
         return marks1 + marks2 + marks3;
     }
-
     public static void main (String [] args){
         student s1 = new student(1, "Alice");
         s1.display();
