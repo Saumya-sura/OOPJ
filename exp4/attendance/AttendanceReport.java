@@ -1,4 +1,4 @@
-package attendance;
+package exp4.attendance;
 import java.util.Scanner;
 public class AttendanceReport {
     public static void main(String[] args) {

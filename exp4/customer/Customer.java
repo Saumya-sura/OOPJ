@@ -1,6 +1,7 @@
-package customer;
-import rental.*;
+package exp4.customer;
 import java.util.Scanner;
+
+import exp4.rental.*;
 
 public class Customer {
     private String name;

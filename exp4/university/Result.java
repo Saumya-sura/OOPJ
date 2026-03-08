@@ -1,4 +1,4 @@
-package university;
+package exp4.university;
 
 public class Result extends Student {
     public Result(String name, int roll_no, String course, int[] marks) {

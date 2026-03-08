@@ -1,6 +1,7 @@
-package portal;
-import university.Student;
+package exp4.portal;
 import java.util.Scanner;
+
+import exp4.university.Student;
 
 public class StudentPortal {
     public static void main(String[] args) {

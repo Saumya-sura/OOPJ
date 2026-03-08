@@ -1,4 +1,4 @@
-package rental;
+package exp4.rental;
 
 public class Car extends Vehicle {
     public Car(String vehicleNumber, String model, double rentalRate) {

@@ -1,5 +1,5 @@
-package employee;
 
+package exp4.employee;
 import java.util.Scanner;
 
 public class Emppay {

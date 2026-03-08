@@ -1,4 +1,4 @@
-package attendance;
+package exp4.attendance;
 
 public class EmployeeAttendance {
     public String name;

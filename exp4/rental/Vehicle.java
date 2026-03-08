@@ -1,4 +1,4 @@
-package rental;
+package exp4.rental;
 
 public class Vehicle {
     private String vehicleNumber;
