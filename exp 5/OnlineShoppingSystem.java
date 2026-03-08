@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+// OnlineShoppingSystem.java
 class Product {
     String productName;
     double price;
@@ -11,12 +10,12 @@ class Product {
 
     void showProductDetails() {
         System.out.println("Product Name: " + productName);
-        System.out.println("Price:" + price);
+        System.out.println("Price: Rs. " + price);
     }
 }
 
 class Electronics extends Product {
-    int warrantyPeriod;
+    int warrantyPeriod; // in months
 
     Electronics(String productName, double price, int warrantyPeriod) {
         super(productName, price);
@@ -24,12 +23,12 @@ class Electronics extends Product {
     }
 
     void showWarrantyDetails() {
-        System.out.println("Warranty Period: " + warrantyPeriod + " years");
+        System.out.println("Warranty Period: " + warrantyPeriod + " months");
     }
 }
 
 class Laptop extends Electronics {
-    int batteryBackup;
+    int batteryBackup; // in hours
 
     Laptop(String productName, double price, int warrantyPeriod, int batteryBackup) {
         super(productName, price, warrantyPeriod);
@@ -37,35 +36,16 @@ class Laptop extends Electronics {
     }
 
     void displayLaptopSpecifications() {
+        showProductDetails();
+        showWarrantyDetails();
         System.out.println("Battery Backup: " + batteryBackup + " hours");
     }
 }
 
 public class OnlineShoppingSystem {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Product Name: ");
-        String name = sc.nextLine();
-
-        System.out.print("Enter Price: ");
-        double price = sc.nextDouble();
-
-        System.out.print("Enter Warranty Period (years): ");
-        int warranty = sc.nextInt();
-
-        System.out.print("Enter Battery Backup (hours): ");
-        int battery = sc.nextInt();
-
-        System.out.println("\n--- Laptop Details ---");
-
-        Laptop laptop = new Laptop(name, price, warranty, battery);
-
-        laptop.showProductDetails();
-        laptop.showWarrantyDetails();
+        Laptop laptop = new Laptop("Dell Inspiron 15", 55000, 24, 8);
+        System.out.println("--- Laptop Specifications ---");
         laptop.displayLaptopSpecifications();
-
-        sc.close();
     }
 }
