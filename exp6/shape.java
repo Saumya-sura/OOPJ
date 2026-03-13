@@ -1,4 +1,4 @@
-package exp6;
+
 
     
 	// Shape interface
